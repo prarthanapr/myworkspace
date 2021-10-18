@@ -1,0 +1,150 @@
+1.public class array {
+    public static void main(String args[]) {
+        int a[]={5,10,15,20,25};       
+        int n = a.length;      
+        for(int i=0;i<n;i++)
+        {
+            System.out.print(a[i]+" ");  
+        }
+        System.out.println();
+        
+    }
+  }
+
+
+2.public class array {
+    public static void main(String args[]) {
+        int a[]={5,10,15,20,25};       
+        int n = a.length;      
+        for(int i=n-1;i>=0;i--)
+        {
+            System.out.print(a[i]+" ");  
+        }
+        System.out.println();
+        
+    }
+  }
+
+
+
+3.public class DuplicateElement {  
+    public static void main(String[] args) {      
+          
+        //Initialize array   
+        int [] arr = new int [] {1, 2, 3, 4, 2, 7, 8, 8, 3};   
+          
+        System.out.println("Duplicate elements in given array: ");  
+        //Searches for duplicate element  
+        for(int i = 0; i < arr.length; i++) {  
+            for(int j = i + 1; j < arr.length; j++) {  
+                if(arr[i] == arr[j])  
+                    System.out.println(arr[j]);  
+            }  
+        }  
+    }  
+}  
+
+
+
+4.public class Main {    
+    public static void main(String[] args) {        
+          
+        int [] arr = new int [] {6,43,90,7,41,22,83,13,2};     
+        int temp = 0;    
+ 
+         
+       System.out.println("The given array: ");    
+       for (int i = 0; i <arr.length; i++) {     
+           System.out.print(arr[i] + " ");    
+        }    
+         
+        for (int i = 0; i <arr.length; i++) {     
+          for (int j = i+1; j <arr.length; j++) {     
+              if(arr[i] >arr[j]) {      
+                 temp = arr[i];    
+               arr[i] = arr[j];    
+               arr[j] = temp;    
+               }     
+            }     
+        }    
+            
+        System.out.println("\nThe sorted array: ");    
+        for (int i = 0; i <arr.length; i++) {     
+            System.out.print(arr[i] + " ");    
+        }    
+    }    
+}   
+
+
+5.public class Main {
+
+  public static void main(String[] args) {
+
+    int num = 29;
+    boolean flag = false;
+    for (int i = 2; i <= num / 2; ++i) {
+     
+      if (num % i == 0) {
+        flag = true;
+        break;
+      }
+    }
+
+    if (!flag)
+      System.out.println(num + " is a prime number.");
+    else
+      System.out.println(num + " is not a prime number.");
+  }
+}
+
+
+6.public class array {
+    public static void main(String args[]) {
+        int a[]={6,5,4,3,2,1};       
+        int n = a.length;      
+        for(int i=n-1;i>=0;i--)
+        {
+            System.out.print(a[i]+" ");  
+        }
+        System.out.println();
+        
+    }
+  }
+
+
+7.public class Main
+{
+  public static void main(String[] args) 
+  {    
+        String str = "Hello my name is prarthana";    
+        int count = 0;    
+        System.out.println("The entered string is: "+str);    
+           
+        for(int i = 0; i < str.length(); i++) 
+        {    
+            if(str.charAt(i) != ' ')    
+                count++;    
+        }                
+          
+        System.out.println("Total number of characters in the string: " + count);    
+    }      
+}
+
+
+8.import java.util.Arrays;  
+  class Main{  
+    public static void main(String args[]){  
+        
+        int intArray[] = {10,20,30,40,50,60,70,80,90};
+        System.out.println("The input Array : " + Arrays.toString(intArray));
+       
+        int key = 50;  
+        System.out.println("\nThe key to be searched:" + key);
+        
+        int result = Arrays.binarySearch(intArray,key);  
+        
+        if (result < 0)  
+            System.out.println("\nKey is not found in the array!");  
+        else 
+            System.out.println("\nKey is found at index: "+result + " in the array.");  
+    }  
